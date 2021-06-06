@@ -1,7 +1,7 @@
 <?php
 
 return array(
-//*************************************附加设置***********************************
+//*************************************附加设置*********************************
     'SHOW_PAGE_TRACE' => false, // 是否显示调试面板
     'URL_CASE_INSENSITIVE' => false, // url区分大小写
     'TAGLIB_BUILD_IN' => 'Cx,Common\Tag\My', // 加载自定义标签
@@ -26,33 +26,33 @@ return array(
         '__APP_JS__' => __ROOT__ . trim(TMPL_PATH, '.') . 'App/Public/js',
         '__APP_IMAGES__' => OSS_URL . trim(TMPL_PATH, '.') . 'App/Public/images'
     ),
-//***********************************URL设置**************************************
+//***********************************URL设置************************************
     'MODULE_ALLOW_LIST' => array('Home', 'Admin', 'Api', 'User', 'App'), //允许访问列表
     'URL_HTML_SUFFIX' => '', // URL伪静态后缀设置
     'URL_MODEL' => 2, //启用rewrite
-//***********************************SESSION设置**********************************
+//***********************************SESSION设置********************************
     'SESSION_OPTIONS' => array(
         'name' => 'BJYADMIN', //设置session名
         'expire' => 24 * 3600 * 15, //SESSION保存15天
         'use_trans_sid' => 1, //跨页传递
         'use_only_cookies' => 0, //是否只开启基于cookies的session的会话方式
     ),
-//***********************************页面设置**************************************
+//***********************************页面设置***********************************
     'TMPL_EXCEPTION_FILE' => APP_DEBUG ? THINK_PATH . 'Tpl/think_exception.tpl' : './Template/default/Home/Public/404.html',
     'TMPL_ACTION_ERROR' => TMPL_PATH . '/Public/dispatch_jump.tpl', // 默认错误跳转对应的模板文件
     'TMPL_ACTION_SUCCESS' => TMPL_PATH . '/Public/dispatch_jump.tpl', // 默认成功跳转对应的模板文件
-//***********************************auth设置**********************************
+//***********************************auth设置***********************************
     'AUTH_CONFIG' => array(
         'AUTH_USER' => 'users'                         //用户信息表
     ),
-//***********************************邮件服务器**********************************
+//***********************************邮件服务器*********************************
     'EMAIL_FROM_NAME' => '', // 发件人
     'EMAIL_SMTP' => '', // smtp
     'EMAIL_USERNAME' => '', // 账号
     'EMAIL_PASSWORD' => '', // 密码  注意: 163和QQ邮箱是授权码；不是登录的密码
     'EMAIL_SMTP_SECURE' => '', // 链接方式 如果使用QQ邮箱；需要把此项改为  ssl
     'EMAIL_PORT' => '25', // 端口 如果使用QQ邮箱；需要把此项改为  465
-//***********************************其他设置**********************************
+//***********************************其他设置***********************************
     'RONG_IS_DEV' => true, //是否是在开发中
     'RONG_DEV_APP_KEY' => '8luwapkvu3xwl', //融云开发环境下的key       仅供测试使用
     'RONG_DEV_APP_SECRET' => '1Aw1D7F6Td25', //融云开发环境下的SECRET     仅供测试使用
@@ -68,7 +68,7 @@ return array(
     'RONGLIAN_ACCOUNT_TOKEN' => '', //容联云通讯 主账号token accountToken
     'RONGLIAN_APPID' => '', //容联云通讯 应用Id appid
     'RONGLIAN_TEMPLATE_ID' => '', //容联云通讯 模板Id
-//***********************************缓存设置**********************************
+//***********************************缓存设置***********************************
     'DATA_CACHE_TIME' => 1800, // 数据缓存有效期s
     'DATA_CACHE_PREFIX' => 'mem_', // 缓存前缀
     'DATA_CACHE_TYPE' => 'Memcached', // 数据缓存类型,
